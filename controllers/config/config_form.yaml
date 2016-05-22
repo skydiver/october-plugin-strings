@@ -1,0 +1,10 @@
+name           : String
+form           : $/martin/strings/models/string/fields.yaml
+modelClass     : Martin\Strings\Models\String
+defaultRedirect: martin/strings/config
+create         :
+    title        : martin.strings::lang.popup.create_string.label
+    redirectClose: martin/strings/config
+update         :
+    title        : martin.strings::lang.popup.update_string.label
+    redirectClose: martin/strings/config

@@ -1,0 +1,17 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+list            : $/martin/strings/models/string/columns.yaml
+modelClass      : Martin\Strings\Models\String
+title           : martin.strings::lang.plugin.name
+recordOnClick   : $.templateStrings.updateString(":string_slug")
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage  : 50
+showSetup       : true
+showSorting     : true
+showCheckboxes  : true
+toolbar         :
+    buttons: list_toolbar
+    search :
+        prompt: backend::lang.list.search_prompt

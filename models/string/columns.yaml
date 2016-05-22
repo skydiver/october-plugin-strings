@@ -1,0 +1,9 @@
+columns:
+    string_label:
+        label     : martin.strings::lang.fields.string_label.label
+        searchable: true
+    string_value:
+        label     : martin.strings::lang.fields.string_value.label
+        searchable: true
+        type      : partial
+        path      : ~/plugins/martin/strings/models/string/_content_column.htm

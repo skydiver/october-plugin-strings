@@ -1,0 +1,16 @@
+<?php if($model->string_help != '') { ?>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-default oc-icon-question-circle help-toggle">Show Help</button>
+        <div style="display:none; margin-top:10px;">
+            <?php echo $model->string_help ?>
+        </div>
+    </div>
+
+    <script>
+        $( ".help-toggle" ).click(function() {
+            $(this).next().fadeToggle();
+        });
+    </script>
+
+<?php } ?>

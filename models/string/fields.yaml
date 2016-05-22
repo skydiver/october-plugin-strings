@@ -1,0 +1,38 @@
+fields:
+
+    string_label:
+        label      : martin.strings::lang.fields.string_label.label
+        placeholder: martin.strings::lang.fields.string_label.placeholder
+        type       : text
+        span       : left
+
+    string_slug:
+        label      : martin.strings::lang.fields.string_slug.label
+        placeholder: martin.strings::lang.fields.string_slug.placeholder
+        type       : text
+        span       : right
+        preset     :
+            field: string_label
+            type : slug
+
+    string_scope:
+        label      : martin.strings::lang.fields.string_scope.label
+        placeholder: martin.strings::lang.fields.string_scope.placeholder
+        type       : dropdown
+
+    string_value:
+        label      : martin.strings::lang.fields.string_value.label
+        placeholder: martin.strings::lang.fields.string_value.placeholder
+        type       : textarea
+        size       : small
+
+    string_help:
+        label  : Help Information
+        type   : textarea
+        size   : large
+        context: create
+
+    help_hint:
+        type   : partial
+        path   : $/martin/strings/models/string/_help_hint.htm
+        context: update
