@@ -53,7 +53,7 @@
                     'url'         => Backend::url('martin/strings/config'),
                     'permissions' => ['martin.strings.manage_strings'],
                     'icon'        => 'icon-quote-right',
-                    'order'       => 800
+                    'order'       => 50
                 ]
             ];
 
